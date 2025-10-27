@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.APO2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/purple_500</item> <!-- Exemplo de cor -->
+        <item name="colorPrimaryVariant">@color/purple_700</item> <!-- Exemplo de cor -->
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.APO2" parent="Base.Theme.APO2" />
+
+    <!-- Estilo para o AppBarLayout (Toolbar ) -->
+    <style name="Theme.APO2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Estilo para o menu de 3 pontos (Popup) -->
+    <style name="Theme.APO2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

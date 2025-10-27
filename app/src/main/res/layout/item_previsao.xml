@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Dia da Semana (Ex: Segunda-feira ) -->
+        <TextView
+            android:id="@+id/text_dia_semana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segunda-feira"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Data (Ex: 25/08) -->
+        <TextView
+            android:id="@+id/text_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25/08"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Descrição (Ex: Sol com algumas nuvens) -->
+        <TextView
+            android:id="@+id/text_descricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sol com algumas nuvens"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_dia_semana"
+            app:layout_constraintEnd_toStartOf="@id/text_temperatura" />
+
+        <!-- Temperatura (Ex: 18°C / 25°C) -->
+        <TextView
+            android:id="@+id/text_temperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18°C / 25°C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_descricao"
+            app:layout_constraintBottom_toBottomOf="@id/text_descricao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.APO2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fundo</item>
+        <item name="colorPrimaryVariant">@color/fundo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="Theme.APO2" parent="Base.Theme.APO2" />
+
+    <!-- Estilo para o AppBarLayout (Toolbar ) -->
+    <style name="Theme.APO2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Estilo para o menu de 3 pontos (Popup) -->
+    <style name="Theme.APO2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
